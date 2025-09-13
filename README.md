@@ -22,7 +22,8 @@
 #define MAX_EXPRESSION_SIZE 100
 
 int main() {
-	int i = 0, j = 0, x = 0, n, flag = 0,k;
+	int i = 0, j = 0, x = 0, n, flag = 0;
+	int k;
 	char b[MAX_EXPRESSION_SIZE], d[15], c, srch;
 
 	printf("Enter the Expression terminated by $: ");
@@ -76,8 +77,55 @@ int main() {
 }
 ```
 # OUTPUT
-<img width="871" height="682" alt="image" src="https://github.com/user-attachments/assets/bcfa7a8e-d0c2-4f69-aeb2-b396c02b9a4b" />
-<img width="871" height="682" alt="image" src="https://github.com/user-attachments/assets/b0ff3bcc-b1dd-403b-857a-132d99124e16" />
+Enter the Expression terminated by $: a+b*c-var1+sum_total$
+
+Given Expression: a+b*c-var1+sum_total
+
+Symbol Table
+Symbol  Type            Address
+a       identifier      000000000065FDB1
+b       identifier      000000000065FDB2
+c       identifier      000000000065FDB3
+v       identifier      000000000065FDB4
+r       identifier      000000000065FDB5
+s       identifier      000000000065FDB6
+u       identifier      000000000065FDB7
+m       identifier      000000000065FDB8
+t       identifier      000000000065FDB9
+o       identifier      000000000065FDBA
+l       identifier      000000000065FDBB
+
+Enter the symbol to search: a
+Symbol Found
+
+--------------------------------
+Process exited after 3.722 seconds with return value 0
+Press any key to continue . . .
+
+Enter the Expression terminated by $: a+b*c-var1+sum_total$
+
+Given Expression: a+b*c-var1+sum_total
+
+Symbol Table
+Symbol  Type            Address
+a       identifier      000000000065FDB1
+b       identifier      000000000065FDB2
+c       identifier      000000000065FDB3
+v       identifier      000000000065FDB4
+r       identifier      000000000065FDB5
+s       identifier      000000000065FDB6
+u       identifier      000000000065FDB7
+m       identifier      000000000065FDB8
+t       identifier      000000000065FDB9
+o       identifier      000000000065FDBA
+l       identifier      000000000065FDBB
+
+Enter the symbol to search: d
+Symbol Not Found
+
+--------------------------------
+Process exited after 11.18 seconds with return value 0
+Press any key to continue . . .
 
 # RESULT
 The program to implement a symbol table is executed and the output is verified.
