@@ -77,6 +77,7 @@ int main() {
 }
 ```
 # OUTPUT
+```
 Enter the Expression terminated by $: a+b*c-var1+sum_total$
 
 Given Expression: a+b*c-var1+sum_total
@@ -101,7 +102,9 @@ Symbol Found
 --------------------------------
 Process exited after 3.722 seconds with return value 0
 Press any key to continue . . .
+```
 
+```
 Enter the Expression terminated by $: a+b*c-var1+sum_total$
 
 Given Expression: a+b*c-var1+sum_total
@@ -126,6 +129,7 @@ Symbol Not Found
 --------------------------------
 Process exited after 11.18 seconds with return value 0
 Press any key to continue . . .
+```
 
 # RESULT
 The program to implement a symbol table is executed and the output is verified.
